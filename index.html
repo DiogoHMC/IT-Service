@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sua Empresa de TI - Inovação e Soluções</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Estilos na própria página (Requisito: Usar estilos na página dentro da tag style) */
+        /* Acumulação de estilos e Sobrescrita */
+        footer a {
+            color: #bdc3c7;
+            text-decoration: none;
+        }
+        footer a[href^="mailto"] {
+            color: #3498db;
+        }
+
+        /* Uso de tag para diferenciar textos: strong e em */
+        .text-block strong {
+            color: #c0392b;
+        }
+        .text-block em {
+            font-style: italic;
+        }
+        
+        /* Uso de técnica de alinhamento estudada (Alinhamento central para o vídeo) */
+        .video-container {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>POR FAVOR, EU QUERO DORMIR</h1>
+
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="https://via.placeholder.com/150x50?text=Logo+da+Empresa" alt="Logo da Empresa">
+            </div>
+            <h1>Seu futuro digital começa aqui.</h1>
+            
+            <nav class="header-links">
+                <a href="login.html">Login de Clientes</a>
+                |
+                <a href="cadastro.html">Cadastre-se</a>
+                <span id="login-separador" style="display:none;">|</span>
+                <a href="carrinho.html" id="linkServicos" style="display:none;">Solicitar Serviços</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="sobre">
+            <h2>Sobre Nós: História e Missão</h2>
+            <p class="text-block">A [Nome da Empresa] nasceu em 2010 da visão de três especialistas em tecnologia, com a missão de democratizar o acesso a soluções de TI de ponta. Começamos com um foco em consultoria e rapidamente expandimos para <span class="texto-destaque">segurança e desenvolvimento de software</span>. Nossa jornada é marcada pela <strong>inovação contínua</strong> e por um compromisso inabalável com o sucesso dos nossos clientes. Hoje, somos referência nacional, impulsionando a transformação digital de centenas de negócios.</p>
+        </section>
+
+        <section>
+            <h2>Vídeo e Galeria</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&amp;start=30" 
+                    title="Vídeo Institucional de 1 Minuto" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="gallery-container">
+                <figure class="gallery-item"><img src="https://via.placeholder.com/250x250?text=Instalação+1" alt="Instalação da empresa"><figcaption>Recepção</figcaption></figure>
+                <figure class="gallery-item"><img src="https://via.placeholder.com/250x250?text=Funcionário+1" alt="Funcionário da empresa"><figcaption>Time de Desenvolvimento</figcaption></figure>
+                <figure class="gallery-item"><img src="https://via.placeholder.com/250x250?text=Equipe+2" alt="Equipe de trabalho"><figcaption>Sala de Reuniões</figcaption></figure>
+                <figure class="gallery-item"><img src="https://via.placeholder.com/250x250?text=Instalação+2" alt="Outra vista da instalação"><figcaption>Data Center</figcaption></figure>
+            </div>
+        </section>
+
+        <section id="servicos">
+            <h2>Nossos Serviços de TI</h2>
+            <div class="services-list">
+                <article class="service-item">
+                    <h3>Consultoria Estratégica</h3>
+                    <p>Alinhamos a tecnologia aos seus objetivos de negócio, otimizando processos e reduzindo custos operacionais.</p>
+                </article>
+                <article class="service-item">
+                    <h3>Segurança Cibernética</h3>
+                    <p>Implementação de soluções robustas para proteger seus dados contra ameaças.</p>
+                </article>
+                <article class="service-item">
+                    <h3>Cloud Computing</h3>
+                    <p>Migração e gerenciamento de infraestrutura na nuvem, focando em escalabilidade e performance.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Fundadores da Empresa</h2>
+            <table class="tabela-fundadores">
+                <thead>
+                    <tr>
+                        <th>Cargo</th>
+                        <th>Nome</th>
+                        <th>Breve CV</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CEO - Estratégia</td>
+                        <td>Ana Souza</td>
+                        <td>Especialista em Gerenciamento de Projetos e Inovação. Mais de 15 anos liderando transformações digitais.</td>
+                    </tr>
+                    <tr>
+                        <td>CTO - Tecnologia</td>
+                        <td>Bruno Costa</td>
+                        <td>Mestre em Ciência da Computação. Arquiteto de Software e Segurança. Desenvolveu algoritmos premiados.</td>
+                    </tr>
+                    <tr>
+                        <td>COO - Operações</td>
+                        <td>Carlos Mendes</td>
+                        <td>Expertise em otimização de processos e logística de TI. Garante a excelência na entrega de serviços.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="coerencia-visual">
+        <div class="container">
+            <table class="footer-layout">
+                <tr>
+                    <td class="footer-block contacts-cell">
+                        <h3>Contatos</h3>
+                        <ul>
+                            <li>Telefone Fixo: (XX) XXXX-XXXX</li> 
+                            <li>WhatsApp: (XX) 9XXXX-XXXX</li>
+                            <li>E-mail: <a href="mailto:contato@empresa.com.br">contato@empresa.com.br</a></li>
+                        </ul>
+                    </td>
+                    <td class="footer-block address-cell">
+                        <h3>Endereço</h3>
+                        <address>
+                            Rua da Inovação, 100, Bairro Tecnológico<br>
+                            São Paulo, SP, 01000-000, Brasil
+                        </address>
+                    </td>
+                    <td class="footer-block payment-cell">
+                        <h3>Formas de Pagamento</h3>
+                        <div class="payment-icons">
+                            <img src="https://via.placeholder.com/60x30?text=Visa" alt="Visa">
+                            <img src="https://via.placeholder.com/60x30?text=Mastercard" alt="Mastercard">
+                            <img src="https://via.placeholder.com/60x30?text=Pix" alt="Pix">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
