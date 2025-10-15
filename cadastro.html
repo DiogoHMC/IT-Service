@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Novo Cliente - Sua Empresa de TI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="https://via.placeholder.com/150x50?text=Logo+da+Empresa" alt="Logo da Empresa">
+            </div>
+            <h1>Cadastro de Cliente</h1>
+            <nav class="header-links">
+                <a href="index.html">Página Inicial</a>
+                |
+                <a href="login.html">Login de Clientes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-box">
+            <h2>Dados Pessoais e Acesso</h2>
+            <form id="formCadastro">
+                
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome e sobrenome" autofocus>
+                
+                <label for="documento">CPF ou CNPJ:</label>
+                <input type="text" id="documento" name="documento" placeholder="000.000.000-00 ou 00.000.000/0000-00">
+
+                <label for="telefone">Telefone (WhatsApp):</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                <label for="email">E-mail (Será seu Login):</label>
+                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com">
+                
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Mínimo 6 caracteres">
+
+                <label for="confirmaSenha">Confirme a Senha:</label>
+                <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Repita a senha">
+                
+                <div id="mensagem-validacao"></div>
+
+                <div class="button-group">
+                    <button type="button" id="btnCadastrar" onclick="realizarCadastro()">Cadastrar</button>
+                    <button type="button" id="btnLimpar" onclick="limparCamposCadastro()">Limpar</button>
+                    <button type="button" id="btnVoltar" onclick="window.location.href='index.html'">Voltar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="coerencia-visual">
+        <div class="container" style="text-align:center;">
+             <p style="color:#bdc3c7;">© 2025 Sua Empresa de TI. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="cadastro.js"></script>
+</body>
+</html>

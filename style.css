@@ -215,3 +215,160 @@ footer li {
     text-align: center;
     display: none;
 }
+
+/* ... (Restante do código style.css, inalterado) ... */
+
+/* ------------------ Estilos Comuns para Formulários (Login e Cadastro) ------------------ */
+
+/* Estilos de formulários */
+.form-box { /* Nova classe genérica para formulários */
+    max-width: 550px; /* Mais largo que o login para acomodar mais campos */
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.form-box h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+.form-box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.form-box input[type="text"], 
+.form-box input[type="password"],
+.form-box input[type="email"],
+.form-box input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+.form-box .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.form-box button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    flex-grow: 1;
+    margin: 0 5px;
+}
+#btnCadastrar {
+    background-color: #2ecc71; /* Cor verde para cadastro */
+    color: white;
+}
+#btnLimpar, #btnVoltar {
+    background-color: #95a5a6; /* Cor cinza para limpar/voltar */
+    color: white;
+}
+.form-box .info-links {
+    text-align: center;
+    margin-top: 20px;
+}
+.form-box .info-links a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 10px;
+}
+#mensagem-validacao {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+/* Reajuste para a caixa de login, que deve ser menor */
+.login-box {
+    max-width: 400px;
+}
+
+/* ... (Restante do código style.css, inalterado) ... */
+
+/* ------------------ Estilos Específicos para a Página de Serviços (carrinho.html) ------------------ */
+
+.tabela-solicitacoes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-solicitacoes th, .tabela-solicitacoes td {
+    border: 1px solid #bdc3c7;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tabela-solicitacoes th {
+    background-color: #34495e; 
+    color: white;
+}
+
+.tabela-solicitacoes tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabela-solicitacoes button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tabela-solicitacoes button:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos para a seção de Nova Solicitação */
+#novaSolicitacao {
+    padding: 30px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.form-campos-dinamicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.campo-label {
+    margin-top: 15px;
+}
+
+.campo-label span {
+    display: block;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#btnIncluirSolicitacao {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+}

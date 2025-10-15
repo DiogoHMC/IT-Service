@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Serviços de TI - Sua Empresa de TI</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        #status-previsto {
+            background-color: #f1c40f !important; /* Amarelo para EM ELABORAÇÃO */
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="https://via.placeholder.com/150x50?text=Logo+da+Empresa" alt="Logo da Empresa">
+            </div>
+            <h1>Minhas Solicitações de Serviço</h1>
+            <nav class="header-links">
+                <a href="index.html">Página Inicial</a>
+                |
+                <a href="login.html">Sair (Login)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="solicitacoesExistentes">
+            <h2>Solicitações Abertas e Concluídas</h2>
+            <table class="tabela-solicitacoes">
+                <thead>
+                    <tr>
+                        <th>Data Pedido</th>
+                        <th>Nº Solicitação</th>
+                        <th>Serviço de TI</th>
+                        <th>Status</th>
+                        <th>Preço Cobrado</th>
+                        <th>Data Prevista</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-solicitacoes-body">
+                    <tr data-num-solicitacao="001">
+                        <td>01/05/2025</td>
+                        <td>#2025001</td>
+                        <td>Consultoria em Segurança</td>
+                        <td>Concluída</td>
+                        <td>R$ 2.500,00</td>
+                        <td>10/05/2025</td>
+                        <td><button onclick="excluirSolicitacao(this)">Excluir</button></td>
+                    </tr>
+                    <tr data-num-solicitacao="002">
+                        <td>15/05/2025</td>
+                        <td>#2025002</td>
+                        <td>Suporte Remoto 24/7</td>
+                        <td>Em Andamento</td>
+                        <td>R$ 999,00</td>
+                        <td>15/06/2025</td>
+                        <td><button onclick="excluirSolicitacao(this)">Excluir</button></td>
+                    </tr>
+                    <tr data-num-solicitacao="003">
+                        <td>20/05/2025</td>
+                        <td>#2025003</td>
+                        <td>Desenvolvimento de APP</td>
+                        <td>Aguardando Início</td>
+                        <td>R$ 15.000,00</td>
+                        <td>20/07/2025</td>
+                        <td><button onclick="excluirSolicitacao(this)">Excluir</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="novaSolicitacao">
+            <h2>Abrir Nova Solicitação</h2>
+            <form id="formNovaSolicitacao">
+                
+                <label for="servico">Serviço de TI:</label>
+                <select id="servico" name="servico" onchange="atualizarDadosServico()" style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px;">
+                    <option value="">-- Selecione um Serviço --</option>
+                    <option value="CONSULTORIA">Consultoria em Segurança</option>
+                    <option value="SUPORTE">Suporte Remoto 24/7</option>
+                    <option value="DESENVOLVIMENTO">Desenvolvimento de APP</option>
+                    <option value="CLOUD">Migração para Cloud</option>
+                </select>
+                
+                <div class="form-campos-dinamicos">
+                    
+                    <div class="campo-label">
+                        <label>Preço:</label>
+                        <span id="preco-previsto">Selecione um serviço</span>
+                    </div>
+
+                    <div class="campo-label">
+                        <label>Prazo de Atendimento:</label>
+                        <span id="prazo-atendimento">Selecione um serviço</span>
+                    </div>
+
+                    <div class="campo-label">
+                        <label>Status:</label>
+                        <span id="status-previsto">EM ELABORAÇÃO</span>
+                    </div>
+
+                    <div class="campo-label">
+                        <label>Data Prevista de Atendimento:</label>
+                        <span id="data-prevista">Calculado automaticamente</span>
+                    </div>
+                </div>
+                
+                <div id="mensagem-validacao"></div>
+
+                <button type="button" id="btnIncluirSolicitacao" onclick="incluirSolicitacao()">Incluir Solicitação</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="coerencia-visual">
+        <div class="container" style="text-align:center;">
+             <p style="color:#bdc3c7;">© 2025 Sua Empresa de TI. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="servicos.js"></script>
+    <script src="login.js"></script> 
+</body>
+</html>

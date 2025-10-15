@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca / Recuperação de Senha - Sua Empresa de TI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="https://via.placeholder.com/150x50?text=Logo+da+Empresa" alt="Logo da Empresa">
+            </div>
+            <h1>Troca / Recuperação de Senha</h1>
+            <nav class="header-links">
+                <a href="index.html">Página Inicial</a>
+                |
+                <a href="login.html">Login de Clientes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-box login-box">
+            <h2>Redefinição de Acesso</h2>
+            <p style="text-align: center; color: #7f8c8d;">Informe seu e-mail de cadastro. Você receberá um link para redefinir sua senha.</p>
+            
+            <form id="formTrocaSenha">
+                
+                <label for="email">E-mail de Cadastro:</label>
+                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" autofocus>
+                
+                <div id="mensagem-validacao"></div>
+
+                <div class="button-group">
+                    <button type="button" id="btnEnviar" onclick="enviarLinkRedefinicao()">Enviar Link de Redefinição</button>
+                    <button type="button" id="btnVoltar" onclick="window.location.href='login.html'">Cancelar e Voltar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="coerencia-visual">
+        <div class="container" style="text-align:center;">
+             <p style="color:#bdc3c7;">© 2025 Sua Empresa de TI. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="troca-senha.js"></script>
+</body>
+</html>

@@ -58,6 +58,8 @@ function realizarLogin() {
         msgValidacao.style.backgroundColor = '#e8f8f5';
         msgValidacao.style.color = '#2ecc71';
         
+        localStorage.setItem('usuarioLogado', 'true');
+
         // Se isto ocorrer, deve haver navegação para a página de conteúdo (index.html)
         setTimeout(() => {
             window.location.href = "index.html"; 
