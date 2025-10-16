@@ -5,31 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sua Empresa de TI - Inovação e Soluções</title>
     <link rel="stylesheet" href="style.css">
-    
-    <style>
-        /* Estilos na própria página (Requisito: Usar estilos na página dentro da tag style) */
-        /* Acumulação de estilos e Sobrescrita */
-        footer a {
-            color: #bdc3c7;
-            text-decoration: none;
-        }
-        footer a[href^="mailto"] {
-            color: #3498db;
-        }
-
-        /* Uso de tag para diferenciar textos: strong e em */
-        .text-block strong {
-            color: #c0392b;
-        }
-        .text-block em {
-            font-style: italic;
-        }
-        
-        /* Uso de técnica de alinhamento estudada (Alinhamento central para o vídeo) */
-        .video-container {
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
 
@@ -44,6 +19,7 @@
                 <a href="login.html">Login de Clientes</a>
                 |
                 <a href="cadastro.html">Cadastre-se</a>
+                
                 <span id="login-separador" style="display:none;">|</span>
                 <a href="carrinho.html" id="linkServicos" style="display:none;">Solicitar Serviços</a>
             </nav>
@@ -51,48 +27,56 @@
     </header>
 
     <main class="container">
-        <section id="sobre">
-            <h2>Sobre Nós: História e Missão</h2>
-            <p class="text-block">A [Nome da Empresa] nasceu em 2010 da visão de três especialistas em tecnologia, com a missão de democratizar o acesso a soluções de TI de ponta. Começamos com um foco em consultoria e rapidamente expandimos para <span class="texto-destaque">segurança e desenvolvimento de software</span>. Nossa jornada é marcada pela <strong>inovação contínua</strong> e por um compromisso inabalável com o sucesso dos nossos clientes. Hoje, somos referência nacional, impulsionando a transformação digital de centenas de negócios.</p>
+        <section id="historia">
+            <h2>Nossa História e Missão</h2>
+            <p>
+                A <strong>Tech Innovate Solutions</strong> nasceu em 2010 com a missão de democratizar a tecnologia de ponta para pequenas e médias empresas. Começamos como um pequeno grupo de consultores apaixonados por código e, rapidamente, nos tornamos uma referência em segurança digital e desenvolvimento de soluções customizadas.
+            </p>
+            <p>
+                Nossa filosofia é baseada na **transparência e na inovação contínua**. Acreditamos que o sucesso de nossos clientes é o nosso sucesso. Em 2020, expandimos nossas operações para o cloud computing, oferecendo migrações seguras e eficientes.
+            </p>
+            <p>
+                <small>Em 2025, fomos eleitos a melhor startup de cibersegurança do país, um marco que nos enche de orgulho e reforça nosso compromisso com a excelência técnica.</small>
+            </p>
         </section>
 
-        <section>
-            <h2>Vídeo e Galeria</h2>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&amp;start=30" 
-                    title="Vídeo Institucional de 1 Minuto" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
-            </div>
-
-            <div class="gallery-container">
-                <figure class="gallery-item"><img src="https://via.placeholder.com/250x250?text=Instalação+1" alt="Instalação da empresa"><figcaption>Recepção</figcaption></figure>
-                <figure class="gallery-item"><img src="https://via.placeholder.com/250x250?text=Funcionário+1" alt="Funcionário da empresa"><figcaption>Time de Desenvolvimento</figcaption></figure>
-                <figure class="gallery-item"><img src="https://via.placeholder.com/250x250?text=Equipe+2" alt="Equipe de trabalho"><figcaption>Sala de Reuniões</figcaption></figure>
-                <figure class="gallery-item"><img src="https://via.placeholder.com/250x250?text=Instalação+2" alt="Outra vista da instalação"><figcaption>Data Center</figcaption></figure>
+        <section id="video-institucional">
+            <h2>Vídeo Institucional - 1 Minuto</h2>
+            <div style="text-align: center; margin: 20px 0;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=7h8u_Xk_z0L_hYFz" title="Vídeo Institucional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
-        <section id="servicos">
-            <h2>Nossos Serviços de TI</h2>
-            <div class="services-list">
-                <article class="service-item">
-                    <h3>Consultoria Estratégica</h3>
-                    <p>Alinhamos a tecnologia aos seus objetivos de negócio, otimizando processos e reduzindo custos operacionais.</p>
-                </article>
-                <article class="service-item">
-                    <h3>Segurança Cibernética</h3>
-                    <p>Implementação de soluções robustas para proteger seus dados contra ameaças.</p>
-                </article>
-                <article class="service-item">
-                    <h3>Cloud Computing</h3>
-                    <p>Migração e gerenciamento de infraestrutura na nuvem, focando em escalabilidade e performance.</p>
-                </article>
+        <section id="galeria">
+            <h2>Nossas Instalações e Equipe</h2>
+            <div class="galeria-fotos">
+                <img src="https://via.placeholder.com/300x200?text=Foto+1+-+Escritorio" alt="Escritório Moderno">
+                <img src="https://via.placeholder.com/300x200?text=Foto+2+-+Reuniao" alt="Reunião de Equipe">
+                <img src="https://via.placeholder.com/300x200?text=Foto+3+-+Servidores" alt="Sala de Servidores">
+                <img src="https://via.placeholder.com/300x200?text=Foto+4+-+Tecnico" alt="Técnico em Ação">
             </div>
         </section>
 
-        <section>
-            <h2>Fundadores da Empresa</h2>
+        <section id="servicos-apresentacao">
+            <h2>Nossos Principais Serviços de TI</h2>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;">
+                <div style="max-width: 200px; padding: 10px;">
+                    <h3>Consultoria de Segurança</h3>
+                    <p>Proteja seus dados com nossa expertise em cibersegurança.</p>
+                </div>
+                <div style="max-width: 200px; padding: 10px;">
+                    <h3>Suporte Remoto 24/7</h3>
+                    <p>Atendimento rápido e eficiente para manter sua operação sempre ativa.</p>
+                </div>
+                <div style="max-width: 200px; padding: 10px;">
+                    <h3>Desenvolvimento de Apps</h3>
+                    <p>Criação de aplicativos personalizados para iOS e Android.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="fundadores">
+            <h2>Nossos Fundadores</h2>
             <table class="tabela-fundadores">
                 <thead>
                     <tr>
@@ -103,54 +87,57 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>CEO - Estratégia</td>
+                        <td>CEO e Estratégia</td>
                         <td>Ana Souza</td>
-                        <td>Especialista em Gerenciamento de Projetos e Inovação. Mais de 15 anos liderando transformações digitais.</td>
+                        <td>Doutora em Ciência da Computação (USP), 15 anos de experiência em gestão de TI.</td>
                     </tr>
                     <tr>
-                        <td>CTO - Tecnologia</td>
-                        <td>Bruno Costa</td>
-                        <td>Mestre em Ciência da Computação. Arquiteto de Software e Segurança. Desenvolveu algoritmos premiados.</td>
+                        <td>CTO e Inovação</td>
+                        <td>Bruno Mendes</td>
+                        <td>Mestre em Engenharia de Software (ITA), especialista em sistemas Cloud e DevOps.</td>
                     </tr>
                     <tr>
-                        <td>COO - Operações</td>
-                        <td>Carlos Mendes</td>
-                        <td>Expertise em otimização de processos e logística de TI. Garante a excelência na entrega de serviços.</td>
+                        <td>Diretor Comercial</td>
+                        <td>Carla Oliveira</td>
+                        <td>MBA em Marketing Digital (FGV), responsável por expandir a base de clientes globalmente.</td>
                     </tr>
                 </tbody>
             </table>
         </section>
+
     </main>
 
-    <footer class="coerencia-visual">
+    <footer>
         <div class="container">
             <table class="footer-layout">
                 <tr>
-                    <td class="footer-block contacts-cell">
+                    <td class="footer-block">
                         <h3>Contatos</h3>
                         <ul>
-                            <li>Telefone Fixo: (XX) XXXX-XXXX</li> 
-                            <li>WhatsApp: (XX) 9XXXX-XXXX</li>
-                            <li>E-mail: <a href="mailto:contato@empresa.com.br">contato@empresa.com.br</a></li>
+                            <li><a href="tel:+551130005000">Telefone Fixo: (11) 3000-5000</a></li>
+                            <li><a href="https://wa.me/5511999999999" target="_blank">WhatsApp: (11) 99999-9999</a></li>
+                            <li><a href="mailto:contato@suaempresa.com.br">E-mail: contato@suaempresa.com.br</a></li>
                         </ul>
                     </td>
-                    <td class="footer-block address-cell">
+                    <td class="footer-block">
                         <h3>Endereço</h3>
-                        <address>
-                            Rua da Inovação, 100, Bairro Tecnológico<br>
-                            São Paulo, SP, 01000-000, Brasil
-                        </address>
+                        <p>Rua da Tecnologia, 123 - 5º Andar</p>
+                        <p>Bairro Inovação - São Paulo/SP</p>
+                        <p>CEP: 01000-000 - Brasil</p>
                     </td>
-                    <td class="footer-block payment-cell">
+                    <td class="footer-block">
                         <h3>Formas de Pagamento</h3>
                         <div class="payment-icons">
                             <img src="https://via.placeholder.com/60x30?text=Visa" alt="Visa">
-                            <img src="https://via.placeholder.com/60x30?text=Mastercard" alt="Mastercard">
+                            <img src="https://via.placeholder.com/60x30?text=Master" alt="Mastercard">
                             <img src="https://via.placeholder.com/60x30?text=Pix" alt="Pix">
                         </div>
                     </td>
                 </tr>
             </table>
+        </div>
+        <div class="container" style="text-align:center; padding-top: 10px;">
+            <p style="color:#bdc3c7; font-size: 0.8em;">© 2025 Sua Empresa de TI. Todos os direitos reservados.</p>
         </div>
     </footer>
     

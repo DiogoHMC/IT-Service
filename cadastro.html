@@ -36,6 +36,31 @@
                 <label for="telefone">Telefone (WhatsApp):</label>
                 <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
 
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento">
+
+                <label>Estado Civil:</label>
+                <div class="radio-group">
+                    <input type="radio" id="solteiro" name="estadoCivil" value="Solteiro" checked>
+                    <label for="solteiro" style="margin-top:0; font-weight: normal;">Solteiro</label>
+                    <input type="radio" id="casado" name="estadoCivil" value="Casado">
+                    <label for="casado" style="margin-top:0; font-weight: normal;">Casado</label>
+                    <input type="radio" id="divorciado" name="estadoCivil" value="Divorciado">
+                    <label for="divorciado" style="margin-top:0; font-weight: normal;">Divorciado</label>
+                    <input type="radio" id="viuvo" name="estadoCivil" value="Viúvo">
+                    <label for="viuvo" style="margin-top:0; font-weight: normal;">Viúvo</label>
+                </div>
+
+                <label for="escolaridade">Escolaridade:</label>
+                <select id="escolaridade" name="escolaridade">
+                    <option value="">-- Selecione sua escolaridade --</option>
+                    <option value="Fundamental">1º Grau Completo</option>
+                    <option value="Medio" selected>2º Grau Completo (Padrão)</option>
+                    <option value="Superior Incompleto">Superior Incompleto</option>
+                    <option value="Superior Completo">Superior Completo</option>
+                    <option value="Pos">Pós-Graduação/Mestrado/Doutorado</option>
+                </select>
+
                 <label for="email">E-mail (Será seu Login):</label>
                 <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com">
                 
@@ -44,6 +69,8 @@
 
                 <label for="confirmaSenha">Confirme a Senha:</label>
                 <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Repita a senha">
+
+                <p id="regra-senha">A senha deve ter no mínimo 6 caracteres, contendo 1 letra maiúscula, 1 número e 1 caractere especial.</p>
                 
                 <div id="mensagem-validacao"></div>
 
@@ -56,7 +83,7 @@
         </div>
     </main>
 
-    <footer class="coerencia-visual">
+    <footer>
         <div class="container" style="text-align:center;">
              <p style="color:#bdc3c7;">© 2025 Sua Empresa de TI. Todos os direitos reservados.</p>
         </div>

@@ -25,12 +25,16 @@
             <nav class="header-links">
                 <a href="index.html">Página Inicial</a>
                 |
-                <a href="login.html">Sair (Login)</a>
+                <a href="login.html" onclick="localStorage.removeItem('usuarioLogado');">Sair (Login)</a> 
             </nav>
         </div>
     </header>
 
     <main class="container">
+
+        <section id="info-usuario">
+            <p>Bem-vindo(a), <strong>Cliente Teste!</strong> Seu Login é <strong>cliente.teste@empresa.com</strong></p>
+        </section>
         
         <section id="solicitacoesExistentes">
             <h2>Solicitações Abertas e Concluídas</h2>
@@ -121,13 +125,12 @@
         </section>
     </main>
 
-    <footer class="coerencia-visual">
+    <footer>
         <div class="container" style="text-align:center;">
              <p style="color:#bdc3c7;">© 2025 Sua Empresa de TI. Todos os direitos reservados.</p>
         </div>
     </footer>
     
     <script src="servicos.js"></script>
-    <script src="login.js"></script> 
-</body>
+    </body>
 </html>
